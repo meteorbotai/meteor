@@ -11,7 +11,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 echo "==> Installing system dependencies..."
-sudo apt-get update -qq && sudo apt-get install -y git unzip python3
+sudo apt-get update -qq && sudo apt-get install -y git unzip
 
 echo "==> Installing uv..."
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -25,9 +25,6 @@ git clone "$REPO" "$DIR"
 
 echo "==> Installing Python dependencies (uv sync)..."
 cd "$DIR" && uv sync
-
-echo "==> Installing Playwright Chromium..."
-cd "$DIR" && bunx playwright install --with-deps chromium
 
 echo "==> Creating data and workspace directories..."
 mkdir -p "$DIR/data" "$DIR/workspace"
