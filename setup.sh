@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# curl -fsSL https://raw.githubusercontent.com/yourusername/meteor/main/setup.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/meteorbotai/meteor/main/setup.sh | bash
 set -euo pipefail
 
-REPO="https://github.com/yourusername/meteor"
+REPO="https://github.com/meteorbotai/meteor"
 DIR="$HOME/meteor"
 
 echo "==> Installing Bun..."
