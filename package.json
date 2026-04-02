@@ -1,6 +1,7 @@
 {
   "name": "meteor",
   "scripts": {
-    "start": "uv run python init_db.py && pm2 start ecosystem.config.js"
+    "start": "uv run python init_db.py && pm2 start ecosystem.config.js",
+    "chat": "uv run python chat.py"
   }
 }
