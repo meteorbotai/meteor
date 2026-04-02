@@ -11,12 +11,5 @@ module.exports = {
       cwd: __dirname,
       env_file: ".env",
     },
-    {
-      name: "dashboard",
-      script: "scripts/dashboard.py",
-      interpreter: py,
-      cwd: __dirname,
-      env_file: ".env",
-    },
   ],
 };
