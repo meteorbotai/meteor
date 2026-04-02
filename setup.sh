@@ -31,6 +31,9 @@ git clone "$REPO" "$DIR"
 echo "==> Installing Python dependencies (uv sync)..."
 cd "$DIR" && uv sync
 
+echo "==> Installing Playwright browsers..."
+npx playwright install chrome
+
 echo ""
 echo "Done! Next steps:"
 echo ""
