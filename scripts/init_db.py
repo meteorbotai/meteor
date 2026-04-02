@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS memories (
 );
 """
 
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-sqlite3.connect(DB_PATH).executescript(SCHEMA)
-print("DB ready.")
+if __name__ == "__main__":
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    sqlite3.connect(DB_PATH).executescript(SCHEMA)
+    print("DB ready.")
