@@ -22,12 +22,10 @@
       "args": ["-y", "@github/mcp-server"],
       "env": { "GITHUB_TOKEN": "${GITHUB_TOKEN}" }
     },
-    "gmail": {
+    "agentmail": {
       "command": "npx",
-      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"],
-      "env": {
-        "GMAIL_OAUTH_CREDENTIALS": "${HOME}/meteor/data/gmail-credentials.json"
-      }
+      "args": ["-y", "agentmail-mcp"],
+      "env": { "AGENTMAIL_API_KEY": "${AGENTMAIL_API_KEY}" }
     },
     "telegram": {
       "command": "uvx",
