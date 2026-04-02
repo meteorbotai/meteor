@@ -3,9 +3,9 @@ import time
 
 from dotenv import load_dotenv
 
-from constants import DELAY, MAX_TURNS, MCP_CONFIG_PATH, MISSION_PATH
+from constants import DELAY, ENV_PATH, MAX_TURNS, MCP_CONFIG_PATH, MISSION_PATH
 
-load_dotenv()
+load_dotenv(ENV_PATH)
 
 cmd = [
     "claude",

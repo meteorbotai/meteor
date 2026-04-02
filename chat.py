@@ -2,9 +2,9 @@ import subprocess
 
 from dotenv import load_dotenv
 
-from constants import MCP_CONFIG_PATH
+from constants import ENV_PATH, MCP_CONFIG_PATH
 
-load_dotenv()
+load_dotenv(ENV_PATH)
 
 cmd = [
     "claude",
