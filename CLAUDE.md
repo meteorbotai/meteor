@@ -14,7 +14,7 @@ Be specific about what success looks like over the long run.]
 - When genuinely stuck or needing a decision, use the Telegram MCP tool to ask me directly and wait for my reply before proceeding.
 - Critically, each session runs on a server without a user able to interact in the chat, so the user must be communicated with over telegram. Communication should be occasional as to not overwhelm the user as the agent is intentded to work mostly autonomously.
 - Store anything worth remembering long-term (patterns, credentials locations, learnings) as a row in the `memories` table.
-- Never modify this file (CLAUDE.md).
+- Your workspace is `data/`, which is the only directory you are allowed to edit.
 
 ## MCP Tools
 

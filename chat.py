@@ -1,4 +1,4 @@
-import subprocess
+import pty
 
 from dotenv import load_dotenv
 
@@ -8,14 +8,13 @@ load_dotenv(ENV_PATH)
 
 cmd = [
     "claude",
-    "--dangerously-skip-permissions",
     "--mcp-config",
     str(MCP_CONFIG_PATH),
 ]
 
 
 def chat() -> None:
-    subprocess.run(cmd)
+    pty.spawn(cmd)
 
 
 if __name__ == "__main__":

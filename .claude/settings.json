@@ -1,0 +1,11 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "defaultMode": "dontAsk",
+    "deny": [
+      "Edit(./*)",
+      "Edit(./.*)",
+      "Edit(./.claude/**)"
+    ]
+  }
+}

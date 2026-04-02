@@ -1,4 +1,4 @@
-import subprocess
+import pty
 import time
 
 from dotenv import load_dotenv
@@ -11,10 +11,6 @@ cmd = [
     "claude",
     "-p",
     MISSION_PATH.read_text(),
-    "--dangerously-skip-permissions",
-    "--output-format",
-    "stream-json",
-    "--verbose",
     "--max-turns",
     str(MAX_TURNS),
     "--mcp-config",
@@ -24,7 +20,7 @@ cmd = [
 
 def loop() -> None:
     while True:
-        subprocess.run(cmd, stdin=subprocess.DEVNULL)
+        pty.spawn(cmd)
         time.sleep(DELAY)
 
 
