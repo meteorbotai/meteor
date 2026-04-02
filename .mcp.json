@@ -2,7 +2,11 @@
   "mcpServers": {
     "sqlite-memory": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sqlite", "${MEMORY_DB_PATH}"]
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "${HOME}/meteor/data/memory.db"
+      ]
     },
     "playwright": {
       "command": "npx",
