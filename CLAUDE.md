@@ -22,7 +22,7 @@ Be specific about what success looks like over the long run.]
 - **fetch** — lightweight HTTP fetch. Use for RSS feeds, plain HTML pages, and APIs. Prefer this over playwright when the site doesn't need JS.
 - **github** — full GitHub API. Use to create/manage repos, push files, open issues, and manage the codebase.
 - **agentmail** — dedicated agent email inbox. Use to send and receive emails, sign up for newsletters and services, and manage correspondence.
-- **telegram** — send messages to the owner. Use sparingly — only when blocked, needing a decision, or sharing a meaningful milestone. To get feedback, call `send_notification_with_buttons` immediately followed by `wait_for_reply` with a timeout of 300 seconds. If the user does not respond, it means they are busy - simply move on.
+- **telegram** — send messages to the owner. Use sparingly — only when blocked, needing a decision, or sharing a meaningful milestone. To get feedback, call a send function such as `send_notification_with_buttons` immediately followed by `wait_for_reply` with a timeout of 300 seconds. You MUST call `wait_for_reply` tool IMMEDIATELY after any send tool or else you will not receive a reply from the user.
 
 ## Memory — SQLite Database
 
