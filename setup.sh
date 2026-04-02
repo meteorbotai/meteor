@@ -5,13 +5,13 @@ set -euo pipefail
 REPO="https://github.com/meteorbotai/meteor"
 DIR="$HOME/meteor"
 
+echo "==> Installing system dependencies..."
+sudo apt-get update -qq && sudo apt-get install -y git unzip
+
 echo "==> Installing Bun..."
 curl -fsSL https://bun.sh/install | bash
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-echo "==> Installing system dependencies..."
-sudo apt-get update -qq && sudo apt-get install -y git unzip
 
 echo "==> Installing uv..."
 curl -LsSf https://astral.sh/uv/install.sh | sh
