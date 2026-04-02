@@ -26,7 +26,7 @@
       "command": "npx",
       "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"],
       "env": {
-        "GMAIL_OAUTH_CREDENTIALS": "${GMAIL_OAUTH_CREDENTIALS_PATH}"
+        "GMAIL_OAUTH_CREDENTIALS": "${HOME}/meteor/data/gmail-credentials.json"
       }
     },
     "telegram": {

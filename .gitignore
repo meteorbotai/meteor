@@ -1,5 +1,6 @@
 .env
-data/
+data/*
+!data/gmail-credentials.example.json
 workspace/
 __pycache__/
 *.pyc
