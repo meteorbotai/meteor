@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Write(./CLAUDE.md)",
+      "Write(./loop.py)",
+      "Write(./chat.py)",
+      "Write(./constants.py)",
+      "Write(./init_db.py)",
+      "Write(./setup.sh)",
+      "Write(./.mcp.json)",
+      "Write(./ecosystem.config.js)",
+      "Write(./package.json)",
+      "Write(./pyproject.toml)",
+      "Write(./.env)",
+      "Write(./.env.example)"
+    ]
+  }
+}
