@@ -1,6 +1,6 @@
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent
 
 MCP_CONFIG_PATH = ROOT / ".mcp.json"
 MISSION_PATH = ROOT / "CLAUDE.md"

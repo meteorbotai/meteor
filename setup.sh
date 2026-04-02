@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# curl -fsSL https://raw.githubusercontent.com/yourusername/meteor/main/scripts/setup.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/yourusername/meteor/main/setup.sh | bash
 set -euo pipefail
 
 REPO="https://github.com/yourusername/meteor"
