@@ -2,6 +2,9 @@
   "enableAllProjectMcpServers": true,
   "permissions": {
     "defaultMode": "dontAsk",
+    "allow": [
+      "Bash(*)"
+    ],
     "deny": [
       "Edit(./*)",
       "Edit(./.*)",
