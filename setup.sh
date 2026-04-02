@@ -6,7 +6,7 @@ REPO="https://github.com/meteorbotai/meteor"
 DIR="$HOME/meteor"
 
 echo "==> Installing system dependencies..."
-sudo apt-get update -qq && sudo apt-get install -y git unzip curl
+sudo apt-get update -qq && sudo apt-get install -y git unzip curl sqlite3
 
 echo "==> Installing Node.js..."
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -

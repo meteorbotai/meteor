@@ -20,3 +20,10 @@ pm2 logs agent     # view logs
 pm2 restart agent  # restart
 pm2 stop agent     # stop
 ```
+
+## Database
+
+```bash
+sqlite3 ~/meteor/data/memory.db "SELECT * FROM tasks"
+sqlite3 ~/meteor/data/memory.db "SELECT * FROM memories"
+```

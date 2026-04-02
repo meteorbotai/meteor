@@ -1,13 +1,5 @@
 {
   "mcpServers": {
-    "sqlite-memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sqlite",
-        "${HOME}/meteor/data/memory.db"
-      ]
-    },
     "playwright": {
       "command": "npx",
       "args": ["-y", "@playwright/mcp@latest"],
@@ -18,9 +10,9 @@
       "args": ["mcp-server-fetch"]
     },
     "github": {
-      "command": "npx",
-      "args": ["-y", "@github/mcp-server"],
-      "env": { "GITHUB_TOKEN": "${GITHUB_TOKEN}" }
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": { "Authorization": "Bearer ${GITHUB_TOKEN}" }
     },
     "agentmail": {
       "command": "npx",

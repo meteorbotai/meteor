@@ -18,7 +18,7 @@ Be specific about what success looks like over the long run.]
 
 ## Memory — SQLite Database
 
-The database lives at `data/memory.db`. Use the `sqlite-memory` MCP tool to query and write.
+The database lives at `data/memory.db`. Use the `Bash` tool to query and write via the `sqlite3` CLI (e.g. `sqlite3 data/memory.db "SELECT * FROM tasks"`).
 
 ### tasks
 
