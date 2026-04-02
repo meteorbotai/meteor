@@ -1,6 +1,6 @@
 import sqlite3
 
-from constants import DATA_DIR, DB_PATH
+from constants import WORKSPACE_DIR, DB_PATH
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS tasks (
@@ -20,6 +20,6 @@ CREATE TABLE IF NOT EXISTS memories (
 """
 
 if __name__ == "__main__":
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    WORKSPACE_DIR.mkdir(parents=True, exist_ok=True)
     sqlite3.connect(DB_PATH).executescript(SCHEMA)
     print("DB ready.")
