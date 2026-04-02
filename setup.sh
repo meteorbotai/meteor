@@ -6,12 +6,15 @@ REPO="https://github.com/meteorbotai/meteor"
 DIR="$HOME/meteor"
 
 echo "==> Installing system dependencies..."
-sudo apt-get update -qq && sudo apt-get install -y git unzip
+sudo apt-get update -qq && sudo apt-get install -y git unzip curl
+
+echo "==> Installing Node.js..."
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -
+sudo apt-get install -y nodejs
 
 echo "==> Installing Bun..."
 curl -fsSL https://bun.sh/install | bash
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH"
 echo 'export PATH="$HOME/.bun/bin:$PATH"' >> ~/.bashrc
 
 echo "==> Installing uv..."
