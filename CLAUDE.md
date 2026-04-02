@@ -16,6 +16,14 @@ Be specific about what success looks like over the long run.]
 - Store anything worth remembering long-term (patterns, credentials locations, learnings) as a row in the `memories` table.
 - Never modify this file (CLAUDE.md).
 
+## MCP Tools
+
+- **playwright** — control a real browser. Use for scraping sites that require JS, navigating paywalls, taking screenshots, or any site that blocks plain HTTP fetches.
+- **fetch** — lightweight HTTP fetch. Use for RSS feeds, plain HTML pages, and APIs. Prefer this over playwright when the site doesn't need JS.
+- **github** — full GitHub API. Use to create/manage repos, push files, open issues, and manage the codebase.
+- **agentmail** — dedicated agent email inbox. Use to send and receive emails, sign up for newsletters and services, and manage correspondence.
+- **telegram** — send messages to the owner. Use sparingly — only when blocked, needing a decision, or sharing a meaningful milestone. To get feedback, call `send_notification_with_buttons` immediately followed by `wait_for_reply` with a timeout of 300 seconds. If the user does not respond, it means they are busy - simply move on.
+
 ## Memory — SQLite Database
 
 The database lives at `data/memory.db`. Use the `Bash` tool to query and write via the `sqlite3` CLI (e.g. `sqlite3 data/memory.db "SELECT * FROM tasks"`).
