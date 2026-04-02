@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "sqlite-memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sqlite", "${MEMORY_DB_PATH}"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "env": { "PLAYWRIGHT_HEADLESS": "1" }
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "gmail": {
+      "command": "npx",
+      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"],
+      "env": {
+        "GMAIL_OAUTH_CREDENTIALS": "${GMAIL_OAUTH_CREDENTIALS_PATH}"
+      }
+    },
+    "telegram": {
+      "command": "uvx",
+      "args": ["tgbot-mcp"],
+      "env": {
+        "TELEGRAM_BOT_TOKEN": "${TELEGRAM_BOT_TOKEN}",
+        "TELEGRAM_CHAT_ID": "${TELEGRAM_CHAT_ID}"
+      }
+    }
+  }
+}
