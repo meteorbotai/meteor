@@ -26,9 +26,6 @@ git clone "$REPO" "$DIR"
 echo "==> Installing Python dependencies (uv sync)..."
 cd "$DIR" && uv sync
 
-echo "==> Creating data and workspace directories..."
-mkdir -p "$DIR/data" "$DIR/workspace"
-
 echo ""
 echo "Done! Next steps:"
 echo ""
