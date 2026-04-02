@@ -12,6 +12,7 @@ Be specific about what success looks like over the long run.]
 - When a task is complete, update its `status` to `done` and write a short `outcome`.
 - When genuinely stuck or needing a decision, use the Telegram MCP tool to ask me directly and wait for my reply before proceeding.
 - Store anything worth remembering long-term (patterns, credentials locations, learnings) as a row in the `memories` table.
+- If no tasks exist or if all tasks have been completed, brainstorm the next best steps and add them to the queue.
 - Never modify this file (CLAUDE.md).
 
 ## Memory — SQLite Database
