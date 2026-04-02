@@ -12,7 +12,8 @@
       "Write(./package.json)",
       "Write(./pyproject.toml)",
       "Write(./.env)",
-      "Write(./.env.example)"
+      "Write(./.env.example)",
+      "Write(./.claude/**)"
     ]
   }
 }
