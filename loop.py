@@ -1,18 +1,7 @@
 import subprocess
 import time
 
-from constants import (
-    DATA_DIR,
-    DELAY,
-    LOG_PATH,
-    MAX_TURNS,
-    MCP_CONFIG_PATH,
-    MISSION_PATH,
-)
-
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-log = open(LOG_PATH, "a", buffering=1)
+from constants import DELAY, MAX_TURNS, MCP_CONFIG_PATH, MISSION_PATH
 
 cmd = [
     "claude",
@@ -30,7 +19,7 @@ cmd = [
 
 def loop() -> None:
     while True:
-        subprocess.run(cmd, stdout=log, stderr=log)
+        subprocess.run(cmd)
         time.sleep(DELAY)
 
 
