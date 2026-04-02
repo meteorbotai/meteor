@@ -5,7 +5,6 @@ module.exports = {
       script: "loop.py",
       interpreter: ".venv/bin/python",
       cwd: __dirname,
-      env_file: ".env",
     },
   ],
 };

@@ -1,7 +1,9 @@
 import subprocess
 import time
-
+from dotenv import load_dotenv
 from constants import DELAY, MAX_TURNS, MCP_CONFIG_PATH, MISSION_PATH
+
+load_dotenv()
 
 cmd = [
     "claude",

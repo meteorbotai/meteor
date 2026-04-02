@@ -3,4 +3,6 @@ name = "meteor"
 version = "0.1.0"
 description = "Meteor AI assistant"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "python-dotenv>=1.2.2",
+]
