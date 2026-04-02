@@ -1,4 +1,4 @@
-import pty
+import subprocess
 
 from dotenv import load_dotenv
 
@@ -14,7 +14,7 @@ cmd = [
 
 
 def chat() -> None:
-    pty.spawn(cmd)
+    subprocess.run(cmd)
 
 
 if __name__ == "__main__":
