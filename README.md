@@ -6,6 +6,7 @@ Long-running AI agent powered by Claude Code.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/meteorbotai/meteor/main/setup.sh | bash
+source ~/.bashrc
 cd ~/meteor
 cp .env.example .env
 nano .env

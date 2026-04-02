@@ -34,6 +34,7 @@ cd "$DIR" && uv sync
 echo ""
 echo "Done! Next steps:"
 echo ""
+echo "  source ~/.bashrc"
 echo "  cd $DIR"
 echo "  cp .env.example .env"
 echo "  nano .env          # fill in your API keys"
